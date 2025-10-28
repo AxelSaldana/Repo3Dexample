@@ -46,9 +46,6 @@ function init() {
     createLighting();
 
     loadBedroomModel();
-
-    // Iniciar animación
-    animate();
 }
 
 // Iluminación

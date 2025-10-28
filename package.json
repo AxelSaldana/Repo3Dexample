@@ -1,0 +1,25 @@
+{
+  "name": "modelo3d-dormitorio",
+  "version": "1.0.0",
+  "description": "Visualizador 3D de dormitorio moderno con Three.js",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "echo 'No build step required for static site'",
+    "start": "echo 'Static site - no start command needed'"
+  },
+  "keywords": [
+    "threejs",
+    "3d",
+    "webgl",
+    "dormitorio",
+    "visualizador"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

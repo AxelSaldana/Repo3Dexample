@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador 3D - Hoteles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div id="app">
+        <!-- Panel lateral izquierdo -->
+        <div class="sidebar left-sidebar">
+            <div class="close-btn">&times;</div>
+            
+            <div class="menu-item active">
+                <div class="menu-icon">🏨</div>
+                <span>Amenities</span>
+            </div>
+            
+            <div class="menu-item">
+                <div class="menu-icon">🌍</div>
+                <span>Surroundings</span>
+            </div>
+            
+            <div class="menu-item">
+                <div class="menu-icon">🔍</div>
+                <span>Unit search</span>
+            </div>
+            
+            <div class="menu-item">
+                <div class="menu-icon">🏠</div>
+                <span>Interior</span>
+            </div>
+        </div>
+
+        <!-- Contenedor de la escena 3D -->
+        <div id="three-container"></div>
+
+        <!-- Controles superiores -->
+        <div class="top-controls">
+            <div class="control-group">
+                <button class="control-btn">📷</button>
+                <button class="control-btn">➕</button>
+                <button class="control-btn">⏯️</button>
+            </div>
+            
+            <!-- Barra de progreso -->
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                    <div class="progress-handle"></div>
+                </div>
+                <span class="time-display">8:00</span>
+            </div>
+            
+            <div class="control-group right">
+                <button class="control-btn">🔄</button>
+                <button class="control-btn">📋</button>
+                <button class="control-btn">❓</button>
+            </div>
+        </div>
+
+        <!-- Panel lateral derecho -->
+        <div class="sidebar right-sidebar">
+            <div class="close-btn">&times;</div>
+            
+            <div class="hotel-info">
+                <div class="hotel-header">
+                    <div class="hotel-icon">🏨</div>
+                    <div class="hotel-title">
+                        <h3>Oasis Hotel</h3>
+                        <p>5-star Hotel</p>
+                    </div>
+                </div>
+                
+                <div class="hotel-description">
+                    <p>The hotel offers a range of amenities, including three pools, with one located on the rooftop, providing stunning ocean views. Guests can relax in three beautifully landscaped park areas or take advantage of the convenient parking facilities. The hotel boasts a wide variety of dining options, ensuring culinary satisfaction. With its array of offerings, the hotel provides a perfect blend of comfort, leisure, and dining experiences for its guests.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Indicadores de navegación -->
+        <div class="navigation-dots">
+            <div class="nav-dot active"></div>
+            <div class="nav-dot"></div>
+            <div class="nav-dot"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

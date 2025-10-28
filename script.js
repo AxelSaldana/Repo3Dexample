@@ -44,11 +44,8 @@ function init() {
 
     // Crear elementos de la escena
     createLighting();
-    createGround();
-    createWater();
+
     loadBedroomModel();
-    createBuildings();
-    createEnvironment();
 
     // Iniciar animación
     animate();

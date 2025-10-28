@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "dev": "python -m http.server 8000",
-    "build": "echo 'No build step required for static site'",
+    "build": "echo 'Static site ready'",
     "start": "echo 'Static site - no start command needed'"
   },
   "keywords": [
@@ -20,6 +20,6 @@
   "dependencies": {},
   "devDependencies": {},
   "engines": {
-    "node": ">=14.0.0"
+    "node": "18.x"
   }
 }
